@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Walter Maths</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <img src="imgs\logo.png" />
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='About.html'>About This Site</a></li>
+            <li>
+                <select name="topics" id="topics" onchange="location = this.value;">
+                    <option value="" disabled selected>Topics</option>
+                    <option value="Abstraction.html">Abstraction</option>
+                </select>
+            </li>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="img1">
+            <img src="imgs/math1.png" />
+        </div>
+        <div class="img2">
+            <img src="imgs/Math-Tutor.jpg" />
+        </div>
+    </div>
+    <div class="about">
+       <h2>About Me</h2>
+       <p>I have a vivid memory from school of my maths teacher asking me if I would consider being a
+        teacher to which my grimacing face could tell a thousand NOs. The irony is not only the
+        creation of this website but my passion to teach mathematics and sharing its hidden beauty is
+        genuine and pure.
+        Why genuine?
+        I am sick and tired of the justification (especially from politicians) citing the utility of the subject
+        or its significance in the modern economy. I personally believe this has had the unintended
+        consequence of destroying the beauty and soul of the subject where the pedagogy of
+        mathematics is akin to robots crunching algorithms, completely devoid of the human spirit. In
+        Hardy’s ‘a mathematician apology’ the only justification mathematics need is the same for that
+        of art or music.
+        I have a BEng in Chemical Engineering (2011) from Birmingham University UK and an MSc in
+        Mathematical Modelling and Scientific Computing from Oxford (2015). In addition, I have had
+        the opportunity to work across various fields from finance, machine learning and of course my
+        favourite which has been tutoring.</p>
+    </div>
+    <script>
+        document.getElementById("topics").selectedIndex = 0;
+    </script>
+</body>
+
+</html>

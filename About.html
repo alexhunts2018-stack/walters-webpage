@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Walter Maths</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <img src="imgs\logo.png" />
+       <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='About.html'>About This Site</a></li>
+            <li><li>
+                <select name="topics" id="topics" onchange="location = this.value;">
+                    <option value="" disabled selected>Topics</option>
+                    <option value="Abstraction.html">Abstraction</option>
+                </select>
+            </li>
+            </li>
+        </ul>
+    </div>
+    <div class="about">
+       <h2>About This Site</h2>
+       <p>We are a small tutoring company located at the heart of Oxford. Our goal is to assist and
+          prepare students who want to pursue mathematics, engineering or a course with high utility of
+          mathematics get offers from top universities.
+          We believe that mainstream mathematical pedagogy has essentially been reduced to “teach to
+          pass exams “, hence so much emphasis on the tricks, step by step memorization of solving
+          mathematical problems. Consequently, more students are achieving high grades in the subject,
+          yet come short when it comes to problem solving which is a major discriminating factor when
+          applying to top universities.
+          A paradigm shift to focusing on how to conceptualise and solve problems mathematically while
+          getting computers to do the calculating should be the new normal in the pedagogy of
+          mathematics. The mathematician Conrad Wolfram addresses this issue better than I will ever
+          do and has a dedicated website</p>
+    </div>
+    <div class="container">
+        <img src="imgs/OxfordNew.jpg">
+        <img src="imgs/Oxford.jpg">
+        <img src="imgs/Oxfordbuild.jpg">
+    </div> 
+    <script>
+        document.getElementById("topics").selectedIndex = 0;
+    </script>
+    
+    </body>
+</html>

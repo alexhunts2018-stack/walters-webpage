@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Walter Maths</title>
+    <link rel="stylesheet" href="abstraction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <img src="imgs\logo.png" />
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='About.html'>About This Site</a></li>
+            <li><select name="topics" id="topics" onchange="location = this.value;">
+                    <option value="" disabled selected>Topics</option>
+                    <option value="Abstraction.html">Abstraction</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <div class="about">
+        <div class="about">
+       <h2>Abstraction upon abstraction</h2>
+       <p>Moving away from the concrete is like the first layer of abstraction. The next layer is what I may
+          refer to as abstraction being ‘a kind of generilsation ’. I gave the example earlier of two pens
+          but I could have easily chosen three, ten or a thousand pens. All these numbers 3,10,1000...
+          e.tc., just like 2 are abstract objects. In an algebra class you learn that all numbers can be
+          generalised by a single variable say x which can be seen as another step further away from our
+          pens.
+          An interesting case of this abstraction is in linear algebra which is the study finite dimensional
+          vector spaces over a field. Ok, this is not the space for linear algebra nor is any prerequisite
+          knowledge of it is required. A little knowledge of vectors encountered already in your physics,
+          maths or computer science classes will suffice. In physics, a vector is a quantity with size and
+          direction, go to computer science they will tell you a vector is a list of items and in mathematics
+          an ordered list of numbers. This notion of a vector space over a field generalises all these
+          instances and can be studied under one roof. Abstraction in this sense seeks to identify and
+          define features that are common to different specialisations and possibilities. Another case is
+          the Reimann integral which essentially gives the area under a continuous function is further
+          generalised to the Lebsegue integral which in turn covers a larger class of functions.
+          I could offer countless other examples but the overarching theme here is that a great deal of
+          mathematical education is moving from one layer of abstraction to another.</p>
+    </div>
+    <div class="think">
+       <h2>Thinking from first principles</h2>
+       <p>At this point we can appreciate the fact that abstraction seeks to remove details or lose
+        information. This is the most powerful aspect of abstraction as it teaches one how to lose
+        unnecessary or irrelevant information. Problems can be distilled to their essence, picking up the
+        signal from the noise where others get paralysed. It is what physicists describe as thinking from
+        first principles which can be contrasted by thinking by analogy. Novel problems require this sort
+        of thinking. I will explore this feature of abstraction when looking at group theory – a branch of
+        abstract algebra.</p>
+    </div>
+    <div class="about">
+        <h2>Abstract Algebra</h2>
+        <p> In high school, the word “algebra” often means “finding solutions to equations.” This probably
+            meant that you were solving linear equations, which look like
+            <p class="center">
+            ax + b = 0
+            </p>
+            <p class="center">
+            or quadratic equations, of the form</p>
+               
+           <p class="center">ax2 + bx + c = 0</p> 
+            <p>
+            Methods for solving these equations were known even in ancient times. Indeed, you learned to
+            solve quadratics by factoring, and also by the quadratic formula, which gives solutions in terms
+            of square roots:
+            You may have also learned to factor cubic polynomials, which have the form
+            </p>
+            <p class="center">
+            ax3 + bx2 + cx + d
+            </p>
+    
+            <p>
+            Techniques were known to ancient mathematicians, including the Babylonians, for solving
+            certain types of cubic equations. However, what about a general formula for the roots? Can we
+            write down a formula, like the quadratic formula, which gives us the roots of any cubic in terms
+            of square roots and cube roots? There is a formula, which we won’t write down here, but it
+            took quite a longtime for mathematicians to find it. Later people started looking for solutions to
+            a quartic and then later to a quintic and higher degree polynomials. In the early 19th century,
+            two young mathematicians (Niels Henrik Abel and Evariste Galois) independently showed that
+            there is no general formula for the roots of a quintic polynomial. <br><br>
+            In proving that there is no “quintic formula,” Abel and Galois both essentially invented what is
+            now known as a group. In particular, Galois studied groups of permutations of the roots of a
+            polynomial. In short, he basically studied what happens when you “shuffle” the roots of the
+            polynomial around. Galois’ ideas led to a whole field called Galois theory, which allows one to
+            determine whether any given polynomial has a solution in terms of radicals. Galois theory is
+            regarded as one of the most beautiful branches of mathematics, and it usually makes up a
+            whole course on its own. This is the context in which groups (in their current form) began to
+            arise. Since then, the study of groups has taken off in many directions, and has become quite
+            interesting in its own right. Groups are used to study permutations, symmetries, and
+            cryptography, to name a few things. We’ll start off by studying groups abstractly, and we will
+            consider interesting examples of groups along the way. Hopefully this discussion will give you
+            an idea of where groups come from, and where your study of algebra can eventually lead.
+            Group theory
+            We will define groups (and other algebraic structures) via a set of desirable axioms, and we will
+            then try to logically deduce properties of groups from these axioms.<br><br>
+
+            To give you a preview, let me say the following regarding group theory. A group will basically be
+            a set (often consisting of numbers, or perhaps matrices, but also of other objects) with some
+            sort of operation on it that is designed to play the role of addition or multiplication.
+            Additionally, we’ll require that the operation has certain desirable arithmetic properties. In the
+            second part of the course, we will study objects called rings. These will arise when we allow for
+            two different operations on a set, with the requirement that they interact well (via a
+            distributive property). Along the way, we will try to do as many examples as possible. Some will
+            come from things that are familiar to you (such as number systems and linear algebra), but
+            some will be totally new. In particular, we will emphasize the role of groups in the study of
+            symmetry. <br><br>
+            Despite the concrete examples, there will still be an overarching theme of classification and
+            structure. That is, once we’ve defined things such as groups and rings and proven some facts
+            about them, we’ll try to answer much broader questions. Namely, we’ll try to determine when
+            two groups are the same (a concept called isomorphism), and when we can break a group
+            down into smaller groups. This idea of classification is something that occurs in pretty much
+            every branch of math (algebra, topology, analysis, etc.). It may seem overly abstract, but it is
+            paramount to the understanding of algebra. <br><br>
+            We will start off slowly in our abstract approach to algebra—we’ll begin with a couple of
+            motivating examples that should already be familiar to you. Then we’ll study one which is more
+            interesting, and perhaps less familiar. Once we’ve done these, we’ll write down the actual
+            definition of a group and begin to study these objects from an “abstract” viewpoint.</p>
+    </div>
+    <script>
+        document.getElementById("topics").selectedIndex = 0;
+    </script>
+</body>
+
+</html>
